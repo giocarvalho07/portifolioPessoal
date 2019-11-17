@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portifolio - Giovanni</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab2e6f2a82.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel=" stylesheet " href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css ">
+    <style>
+        .foto-perfil {
+            height: 395px;
+            width: 295px;
+            max-width: 100%;
+            border-radius: 5%;
+        }
+        
+        .foto-carrosel {
+            height: 600px;
+            width: 700px;
+            border-radius: 7%;
+        }
+        
+        .corPrimaria {
+            background-color: #2D30CC;
+        }
+        
+        .corSecundaria {
+            background-color: #FF623D;
+        }
+        
+        .corTerciaria {
+            background-color: #7979794b;
+        }
+        
+        .corQuaternaria {
+            background-color: #fff;
+        }
+        
+        .corQuina {
+            background-color: #52B0FF;
+        }
+        
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #797979 !important;
+        }
+        
+        .icones {
+            padding-left: 5px;
+        }
+        
+        .espaco {
+            margin-top: 25px;
+        }
+        
+        .espaco2 {
+            margin-top: 45px;
+        }
+        
+        .tituloBranco {
+            text-decoration: none;
+            text-underline-position: below;
+            scroll-padding-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .textoBranco {
+            text-decoration: none;
+            text-underline-position: below;
+            scroll-padding-bottom: 5px;
+            font-weight: 300;
+            color: #fff !important;
+        }
+        
+        .textoLaranja {
+            text-decoration: none;
+            text-underline-position: below;
+            scroll-padding-bottom: 5px;
+            font-weight: 500;
+            color: #FF623D;
+        }
+        
+        .textoCinza {
+            color: #797979;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        
+        .textoAzulEscuro {
+            color: #2D30CC !important;
+            font-weight: 250px;
+        }
+        
+        .textoRoxo {
+            color: #797979;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        
+        .textoRoxo:hover {
+            color: red !important;
+            font-weight: 250px;
+        }
+        
+        .textoAzulClaro {
+            color: #52B0FF !important;
+            font-weight: 250px;
+        }
+        
+        .tituloCinza {
+            text-decoration: underline;
+            text-underline-position: below;
+            scroll-padding-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #6F709E;
+        }
+        
+        .animacao2 {
+            animation-delay: 2s;
+            transition-delay: 2s;
+        }
+        
+        .animacao4 {
+            animation-delay: 4s;
+            transition-delay: 4s;
+        }
+        
+        .animacao6 {
+            animation-delay: 6s;
+            transition-delay: 6s;
+        }
+        
+        .footer-tamanho {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+        
+        .footer-div {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around !important;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<!-- azul escuro #2D30CC
+claro #52B0FF
+cinza #6F709E
+vinho #CC2943
+laranja #FF623D -->
+
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg  corQuina ">
+        <a class="navbar-brand tituloBranco animated rotateInUpLeft" href="#">Giovanni de Carvalho</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link tituloBranco" href="#sobre">Sobre</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link  tituloBranco" href="#eventos">Eventos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link tituloBranco" href="#depoimentos">Depoimentos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link  tituloBranco" href="#projetos">Projetos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link tituloBranco" href="#contato">contatos</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="jumbotron text-center corTerciaria">
+        <div id="sobre" class="container">
+            <img class="foto-perfil" src="perfil.jpeg" alt="foto do giovanni">
+            <h1 class="jumbotron-heading espaco textoAzulEscuro">
+                Olá sou o Giovanni de Carvalho
+            </h1>
+            <h2 class="lead text-center textoLaranja animated lightSpeedIn">
+                Desenvolvedor Full Stack Jr
+            </h2>
+            <p class="lead text-muted">
+                Formado em: <br>
+
+                <li class="textoCinza">
+                    Acadêmia de programação
+                    <span class="textoRoxo">Mastertech</span> em parceria com o
+                    <span class="textoRoxo">Facebook</span>
+
+                </li>
+                <li class="textoCinza espaco">
+                    <span class="textoRoxo">CodeXP</span>: Escola <span class="textoRoxo">Senai de Informática</span> em desenvolvimento <span class="textoRoxo">Full Stack</span>
+                </li>
+                <li class="textoCinza espaco">
+                    Programação Mobile <span class="textoRoxo">Madcode</span> em parceria com o <span class="textoRoxo">Facebook</span>
+                </li>
+
+                <li class="textoCinza espaco">
+                    Entusiasta de <span class="textoRoxo"> ecossistemas inovadores</span> <br>
+                </li>
+            </p>
+            <p>
+                <a href="#" class="btn btn-dark-2">
+                    Contato
+                </a>
+            </p>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- ============== section 2 === -->
+
+    <div class="album py-5 corQuaternaria">
+        <div class="container">
+            <h2 id="eventos" class="jumbotron-heading text-center espaco textoLaranja animated fadeInDown animacao2">
+                Participação de eventos em 2019!
+            </h2>
+            <p class="text-center espaco2 ">
+                Acompanhe os eventos em que participei no ano de 2019. Os eventos na área da tecnologia são extramente importantes para fomentar a comunidade desenvolvedora e manter as redes de networking sempre atualizadas.
+            </p>
+            <div class="row espaco">
+                <div class="col-md-3 espaco">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="loft.jpeg" alt="Meetup na empresa loft" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text textoAzulClaro">
+                                Evento realizado pela startup Loft. <br> A Loft está entre as 10 maiores startups do país. <br>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="github.com">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ">Ver
+                                            Mais ...</button>
+                                    </a>
+                                    <a href="">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ">Sobre a Loft ...</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 espaco">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="fCamara.jpeg" alt="Hackathon na FCamara" style="height: 225px; width: 100%; display: block;" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text textoAzulClaro">
+                                2º Lugar no Hackathon FCamara.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="github.com">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ">Ver
+                                            Mais ... </button>
+                                    </a>
+                                    <a href="">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ">Sobre a FCamara ...</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 espaco">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="fiesp.jpeg" alt="Hackathon fiesp" style="height: 225px; width: 100%; display: block;" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text textoAzulClaro">
+                                Participação no Hackathon da Fiesp.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="github.com">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver
+                                            Mais ...</button>
+                                    </a>
+                                    <a href="">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Sobre a Fiesp ...</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 espaco">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="nasa.jpeg" alt="Miniatura [100% x225]" style="height: 225px; width: 100%; display: block;" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text textoAzulClaro">
+                                Participação no Hackathon da (Nasa Sapce).
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="github.com">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver
+                                            Mais ... </button>
+                                    </a>
+                                    <a href="">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Sobre a Nasa ...</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- == section sobre ==  -->
+    <section class="jumbotron text-center corSecundaria">
+        <div class="container">
+            <h2 id="depoimentos" class="jumbotrom heading animated fadeInLeftBig animacao4">
+                Depoimentos:
+            </h2>
+            <p class="textoBranco espaco">
+                Acompanhe alguns depoimentos realizados por pessoas do meio da tecnologia que estão conectadas diretamente comigo:
+            </p>
+            <div class=" row espaco2 ">
+                <div class="col-sm-4 ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Gustavo Mussolino</h5>
+                            <p class="text-center">
+                                Desenvolvedor Full Stack
+                            </p>
+                            <p class="card-text ">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                            <a href="# " class="btn btn-primary ">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Odirley </h5>
+                            <p class="text-center">
+                                Instrutor Escola Senai de Informática
+                            </p>
+                            <p class="card-text ">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                            <a href="# " class="btn btn-primary ">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h5 class="card-title "> James</h5>
+                            <p class="text-center">
+                                Instrutor Mastertech e Desenvolvedor Front-end Jr
+                            </p>
+                            <p class="card-text ">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                            <a href="# " class="btn btn-primary ">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- == section depoimentos ==  -->
+    <section class="jumbotron text-center corQuaternaria ">
+        <div class="container ">
+            <div class="container ">
+                <h2 id="projetos" class="jumbotrom heading espaco2 animated fadeInUpBig animacao6 ">
+                    Projetos Realizados
+                </h2>
+                <p class="text-center espaco ">
+                    Acompanhe alguns dos projetos realizados e postados em meu Github. Estes projetos foram destaques no ano de 2019, como a finalização do Curso da Mastertech e da Madcode em parceria com o Facebook e uma automação de WhatasApp em python.
+                </p>
+
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide espaco2" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 foto-carrosel" src="pythonCode.jpg" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="textoAzulEscuro">Projeto Automação de Mensagens do WhatasApp em Python</h5>
+                            <a class="textoAzulClaro" href="https://github.com/giocarvalho07/automacaoBot-py.git"> https://github.com/giocarvalho07/automacaoBot-py.git </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 foto-carrosel" src="code.jpg" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="textoCinza">Projeto final da Acadêmia de Programação do Facebook "Demoday Estação Hack" </h5>
+                            <a class="textoAzulClaro" href="https://github.com/giocarvalho07/Academia-Demoday.git"> https://github.com/giocarvalho07/Academia-Demoday.git </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 foto-carrosel" src="mobile.jpg" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="textoAzulEscuro"> Projeto de desenvolvimento de aplicativo mobile em Kotlin</h5>
+                            <a class="textoAzulClaro" href="https://github.com/giocarvalho07/kotlinAndroid.git"> github.com/giocarvalho07/kotlinAndroid.git </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- == footer == -->
+    <footer id="contato" class="text-center corPrimaria footer-tamanho">
+        <div class="container ">
+            <div class=" espaco tituloBranco">Site desenvolvido por Giovanni de Carvalho</div>
+            <div class="textoBranco">Acompanhe as redes sociais:
+                <a href=" "><i class="fab fa-linkedin espaco "></i></a>
+                <a href=" "><i class="fab fa-github espaco "></i></a>
+            </div>
+            <div class="espaco textoBranco">Entre em contato: <a class="textoLaranja" href="mailto:giovannidecarvalhomendes@outlook.com" title="">Clique aqui</a></div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
